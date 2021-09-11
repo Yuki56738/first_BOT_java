@@ -12,7 +12,6 @@ public class main {
         //System.out.println("Hello, Java!");
         Dotenv dotenv = Dotenv.load();
         final   String token = dotenv.get("DISCORD_TOKEN");
-        //final String token = "ODg1ODA4NTgxMTU5NTc5NjU4.YTsbhw.m0HCGiTwH5XBKLRDrR0RyPY78rg";
         final DiscordClient client = DiscordClient.create(token);
         final GatewayDiscordClient gateway = client.login().block();
 
